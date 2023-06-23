@@ -25,7 +25,7 @@ function checkAnswer() {
             backgroundImages.push(`url('images/background${score}.svg')`);
             document.body.style.backgroundImage = backgroundImages;
         } else {
-            alert('¡Buenaaaa! Quién sos? Paenza?');
+            alert('Congratulations! You made it!');
             score = 0;
             backgroundImages = [];
             document.body.style.backgroundImage = backgroundImages;
@@ -34,7 +34,7 @@ function checkAnswer() {
     } else {
         if (score != 0) { score--; }
         console.log(`Wrong! Score ${score}`);
-        alert('NO! Pensá mejor o dibujá más claro!');
+        alert('Maybe try to draw a clear figure');
         setTimeout(function () {
             backgroundImages.pop();
             document.body.style.backgroundImage = backgroundImages;
